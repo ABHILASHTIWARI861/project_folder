@@ -4,7 +4,7 @@ const body_parser = require('body-parser');
 
 app.use(body_parser.urlencoded({extended: true}));
 
-app.get('/', function(req,res){
+app.get('/abc', function(req,res){
 res.sendFile(__dirname + '/bmiCalculator.html')
 })
 
